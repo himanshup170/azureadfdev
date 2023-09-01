@@ -1,0 +1,13 @@
+{
+	"name": "Azure_Lookup_Sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlGenericDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
