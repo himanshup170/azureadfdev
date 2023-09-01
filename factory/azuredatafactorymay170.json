@@ -1,0 +1,9 @@
+{
+	"name": "azuredatafactorymay170",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "85347687-6772-4b76-8629-98650866f16d",
+		"tenantId": "a7abe073-8563-4550-a307-f3f93a992a89"
+	}
+}

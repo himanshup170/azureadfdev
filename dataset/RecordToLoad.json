@@ -1,0 +1,65 @@
+{
+	"name": "RecordToLoad",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADLSGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "RecordToLoad.csv",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ICMAgreementId",
+				"type": "String"
+			},
+			{
+				"name": "ICMParentContractID",
+				"type": "String"
+			},
+			{
+				"name": "ICMContractName",
+				"type": "String"
+			},
+			{
+				"name": "ICMVendorID",
+				"type": "String"
+			},
+			{
+				"name": "ICMVendorName",
+				"type": "String"
+			},
+			{
+				"name": "ICMSpendCategoryMaster_ICMSpendCategory",
+				"type": "String"
+			},
+			{
+				"name": "ICMContractValue",
+				"type": "String"
+			},
+			{
+				"name": "Currency_ICMContractValue",
+				"type": "String"
+			},
+			{
+				"name": "SanofiOrgPathId",
+				"type": "String"
+			},
+			{
+				"name": "ICMSpendCategory",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
