@@ -1,0 +1,63 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ICMAgreementId",
+				"type": "String"
+			},
+			{
+				"name": "ICMParentContractID",
+				"type": "String"
+			},
+			{
+				"name": "ICMContractName",
+				"type": "String"
+			},
+			{
+				"name": "ICMVendorID",
+				"type": "String"
+			},
+			{
+				"name": "ICMVendorName",
+				"type": "String"
+			},
+			{
+				"name": "ICMSpendCategoryMaster_ICMSpendCategory",
+				"type": "String"
+			},
+			{
+				"name": "ICMContractValue",
+				"type": "String"
+			},
+			{
+				"name": "Currency_ICMContractValue",
+				"type": "String"
+			},
+			{
+				"name": "SanofiOrgPathId",
+				"type": "String"
+			},
+			{
+				"name": "ICMSpendCategory",
+				"type": "String"
+			}
+		]
+	}
+}
